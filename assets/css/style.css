@@ -621,19 +621,44 @@ body {
 
 
 /*-----------------------------------*\
-  #PORTFOLIO
+  #PROJECTS
 \*-----------------------------------*/
 
-.portfolio .section-title { margin-block-end: 18px; }
+.projects .section-title { margin-block-end: 10px; }
 
-.portfolio .section-text { margin-block-end: 80px; }
+.projects .section-text { 
+  margin-block-end: 20px;
+}
 
-.portfolio-list {
+.projects-list {
   display: grid;
   gap: 60px;
 }
 
-.portfolio-card {
+.projects-list table td {
+  border: 1px solid white;
+  padding: 10px 10px;
+  color: aqua;
+  text-align: center;
+  overflow-wrap: break-word;
+}
+
+.projects-list table th {
+  border: 1px solid white;
+  padding: 10px 20px;
+  color: rgb(255, 242, 0);
+  text-align: center;
+  font-size: 20px;
+  overflow-wrap: break-word;
+}
+
+.projects-list table .project-name {
+  text-align: left;
+  overflow-wrap: break-word;
+}
+
+
+.projects-card {
   background-color: var(--independence);
   background-repeat: no-repeat;
   background-size: cover;
@@ -646,19 +671,19 @@ body {
   transition: var(--transition-2);
 }
 
-.portfolio-list > li:nth-child(even) .card-content { margin-inline-start: auto; }
+.projects-list > li:nth-child(even) .card-content { margin-inline-start: auto; }
 
-.portfolio-card .card-subtitle {
+.projects-card .card-subtitle {
   color: var(--orange-soda);
   margin-block-end: 5px;
 }
 
-.portfolio-card .card-title {
+.projects-card .card-title {
   max-width: 20ch;
   margin-block-end: 20px;
 }
 
-.portfolio-card .btn-link {
+.projects-card .btn-link {
   display: flex;
   align-items: center;
   gap: 5px;
@@ -666,11 +691,63 @@ body {
   text-transform: uppercase;
 }
 
-.portfolio-card .btn-link ion-icon {
+.projects-card .btn-link ion-icon {
   color: var(--orange-soda);
   font-size: 1.6rem;
 }
 
+
+
+/*-----------------------------------*\
+  #ACHIEVEMENTS
+\*-----------------------------------*/
+
+.achievements .section-title { margin-block-end: 18px; }
+
+.achievements .section-text { margin-block-end: 80px; }
+
+.achievements-list {
+  display: grid;
+  gap: 60px;
+}
+
+.achievements-card {
+  background-color: var(--independence);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 120px 20px;
+  border-radius: var(--radius-20);
+  font-family: var(--ff-barlow);
+  color: var(--white);
+  font-weight: var(--fw-600);
+  transition: var(--transition-2);
+}
+
+.achievements-list > li:nth-child(even) .card-content { margin-inline-start: auto; }
+
+.achievements-card .card-subtitle {
+  color: var(--orange-soda);
+  margin-block-end: 5px;
+}
+
+.achievements-card .card-title {
+  max-width: 20ch;
+  margin-block-end: 20px;
+}
+
+.achievements-card .btn-link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: var(--fs-6);
+  text-transform: uppercase;
+}
+
+.achievements-card .btn-link ion-icon {
+  color: var(--orange-soda);
+  font-size: 1.6rem;
+}
 
 
 
@@ -961,10 +1038,16 @@ textarea.contact-input {
 @media (min-width: 600px) {
 
   /**
-   * PORTFOLIO
+   * PROJECTS
    */
 
-  .portfolio-list li:nth-child(even) .card-content { margin-inline-start: 50%; }
+  .projects-list li:nth-child(even) .card-content { margin-inline-start: 50%; }
+
+  /**
+   * ACHIEVEMENTS
+   */
+
+  .achievements-list li:nth-child(even) .card-content { margin-inline-start: 50%; }
 
 }
 
@@ -979,15 +1062,27 @@ textarea.contact-input {
 @media (min-width: 768px) {
 
   /**
-   * PORTFOLIO
+   * PROJECTS
    */
-
-  .portfolio-card {
+  
+  .projects-card {
     background-size: 115%;
     padding-inline: 80px;
   }
 
-  .portfolio-card:is(:hover, :focus) { background-size: 130%; }
+  .projects-card:is(:hover, :focus) { background-size: 130%; }
+
+
+  /**
+   * ACHIEVEMENTS
+   */
+
+  .achievements-card {
+    background-size: 115%;
+    padding-inline: 80px;
+  }
+
+  .achievements-card:is(:hover, :focus) { background-size: 130%; }
 
 
 
@@ -1261,12 +1356,22 @@ textarea.contact-input {
 
 
   /**
-   * PORTFOLIO
+   * PROJECTS
    */
 
-  .portfolio-card .card-subtitle { font-size: var(--fs-5); }
+  .projects-card .card-subtitle { font-size: var(--fs-5); }
 
-  .portfolio-card .btn-link { --fs-6: 1.6rem; }
+  .projects-card .btn-link { --fs-6: 1.6rem; }
+
+
+
+  /**
+   * ACHIEVEMENTS
+   */
+
+  .achievements-card .card-subtitle { font-size: var(--fs-5); }
+
+  .achievements-card .btn-link { --fs-6: 1.6rem; }
 
 
 
