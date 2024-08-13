@@ -637,7 +637,7 @@ body {
 
 .projects-list table td {
   border: 1px solid white;
-  padding: 5px 5px;
+  padding: 10px 5px;
   color: aqua;
   text-align: center;
   overflow-wrap: break-word;
