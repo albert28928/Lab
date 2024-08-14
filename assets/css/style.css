@@ -205,6 +205,12 @@ body {
   object-fit: cover;
 }
 
+.img-cover-LabPic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .section { padding-block: var(--section-padding); }
 
 .section-subtitle {
@@ -432,7 +438,7 @@ body {
 
 .hero-title {
   font-family: var(--ff-barlow);
-  font-size: 55px;
+  font-size: 48px;
   font-weight: var(--fw-600);
   line-height: 1.3;
   margin-block-end: 14px;
@@ -445,7 +451,7 @@ body {
 }
 
 .hero-text { 
-  font-size: 40px;
+  font-size: 35px;
   margin-block-end: 25px; 
 }
 
@@ -570,7 +576,7 @@ body {
 .members-card .card-banner img { 
   transition: all 0.4s ease 0s;
   width: 200px;
-  height: 300px
+  height: 100%
 }
 
 .members-card .card-banner-professor img {
@@ -905,48 +911,80 @@ textarea.contact-input {
 
 
 /*-----------------------------------*\
-  #Lab Picture
+  #Lab Pictures
 \*-----------------------------------*/
 
-.LabPic { padding-block-end: 120px; }
+.labpictures { padding-block-end: 120px; }
 
-.LabPic-list {
-  display: grid;
-  gap: 40px;
-}
+.labpictures .section-title { margin-block-end: 10px; }
 
-.LabPic-card { font-family: var(--ff-barlow); }
-
-.LabPic-card .card-banner {
-  background-color: var(--independence);
-  border-radius: var(--radius-15);
-  overflow: hidden;
+.labpictures .section-text { 
   margin-block-end: 20px;
 }
 
-.LabPic-card .card-banner img { transition: var(--transition-2); }
-
-.LabPic-card .card-banner :hover { transform: scale(1.1); }
-
-.LabPic-card .card-banner:focus-within {
-  outline: 2px solid var(--white);
-  outline-offset: 4px;
+.labpictures .date {
+  text-align: center;
+  color:black;
+  font-size: 25px;
+  margin-bottom: 10px;
+  border-radius: var(--radius-15);
+  border-width: thin; 
+  border: solid turquoise;
+  background-color:cadetblue;
 }
 
-.LabPic-card .card-tag {
+.labpictures-list {
+  display: grid;
+  margin-bottom: 35px;
+}
+
+.labpictures-list .block {
+  background: var(--independence);
+  border-bottom: 2px solid transparent;
+  border-radius: var(--radius-15);
+  margin-bottom: 20px;
+}
+
+.labpictures-card { font-family: var(--ff-barlow); }
+
+.labpictures-card .card-banner {
+  background-color: var(--independence);
+  border-radius: var(--radius-15);
+  overflow: hidden;
+  margin: auto;
+}
+
+.labpictures-card .card-banner img { 
+  transition: all 0.4s ease 0s;
+}
+
+
+.labpictures-card .card-banner img:hover { 
+  transform: scale(1.2);
+}
+
+.labpictures-card .text-block {
+  display: block;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.labpictures-card .card-tag {
   color: var(--orange-soda);
   margin-block-end: 5px;
 }
 
-.LabPic-card .card-title {
+.labpictures-card .card-title {
   color: var(--white);
   font-weight: var(--fw-600);
   line-height: 1.3;
 }
 
-.LabPic-card .card-title a { transition: var(--transition-2); }
+.labpictures-card .card-title a { transition: var(--transition-2); }
 
-.LabPic-card .card-title a:is(:hover, :focus) { color: var(--orange-soda); }
+.labpictures-card .card-title a:is(:hover, :focus) { color: var(--orange-soda); }
 
 
 
@@ -963,6 +1001,7 @@ textarea.contact-input {
   max-width: max-content;
   margin-inline: auto;
   margin-block-end: 10px;
+  text-align: center;
 }
 
 .copyright-link {
@@ -1087,7 +1126,7 @@ textarea.contact-input {
 
 
   /**
-   * MEMBERS, NEWS
+   * MEMBERS, NEWS, LABPICTURES
    */
 
   .about-list,
@@ -1097,13 +1136,18 @@ textarea.contact-input {
     column-gap: 50px;
   }
 
+  .labpictures-list {
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-bottom: 35px;
+  }
+
   .members-list {
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
   }
 
   .members-card .card-banner img{
-    height: 300px;
     background-color: var(--white);
     overflow: hidden;
     display: flex;
@@ -1120,9 +1164,20 @@ textarea.contact-input {
     position: relative;
   }
 
+
+  .labpictures-list .block {
+    background-color: var(--space-cadet);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 10px;
+  }
+
   .contact-card {
     width: 750px;
   }
+  
 
 
 }
@@ -1231,7 +1286,7 @@ textarea.contact-input {
   .hero-title {
     --fs-5: 2.2rem;
     margin-block-end: 25px;
-    font-size: 75px;
+    font-size: 65px;
   }
 
   .hero-text {
@@ -1336,7 +1391,6 @@ textarea.contact-input {
 
   .members-card .card-banner img{
     width: 100%;
-    height: 300px;
     background-color: var(--white);
     overflow: hidden;
     display: flex;
@@ -1412,8 +1466,27 @@ textarea.contact-input {
     gap: 25px;
   }
 
-  
+  /**
+   * LABPICTURES
+   */
 
+  .labpictures { padding-block-end: 180px; }
+
+  .labpictures-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .labpictures-list .block {
+    background-color: var(--space-cadet);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+
+  
   /**
    * FOOTER
    */
