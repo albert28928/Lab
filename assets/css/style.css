@@ -194,8 +194,8 @@ body {
 .btn-primary.blue:is(:hover, :focus) { background-color: var(--orange-soda); }
 
 .img-cover {
-  width: 50%;
-  height: 50%;
+  max-width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -572,6 +572,7 @@ body {
 .members-card .card-banner-professor {
   background-color: var(--white);
   overflow: hidden;
+  height: 300px;
   margin-block-end: 10px;
   display: flex;
   justify-content: center;
@@ -581,13 +582,12 @@ body {
 
 .members-card .card-banner img { 
   transition: all 0.4s ease 0s;
-  width: 200px;
-  height: 100%
+  width: 235px; /*200px*/
 }
 
 .members-card .card-banner-professor img {
   transition: all 0.4s ease 0s;
-  width: 200px;
+  width: 235px; /*200px*/
 }
 
 .members-card .button {
@@ -1159,11 +1159,6 @@ textarea.contact-input {
     margin-bottom: 35px;
   }
 
-  .members-list {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-  }
-
 
   .contact-card {
     width: 750px;
@@ -1174,6 +1169,17 @@ textarea.contact-input {
 }
 
 
+@media (min-width: 808px) {
+
+  /**
+   * MEMBERS
+   */
+
+  .members-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+  }
+}
 
 
 
@@ -1371,27 +1377,6 @@ textarea.contact-input {
 
 
   /**
-   * MEMBERS
-   */
-
-  .members-list { column-gap: 100px; }
-  .members-list {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
-  }
-
-  .members-card .card-banner img{
-    width: 100%;
-    height: 300px;
-  }
-
-  .members-card .card-banner-professor img{
-    width: 100%;
-    height: 300px;
-  }
-
-
-  /**
    * PROJECTS
    */
 
@@ -1473,4 +1458,12 @@ textarea.contact-input {
   .copyright,
   .footer-list { margin-inline: 0; }
 
+}
+
+
+@media (min-width: 1092px) {
+  .members-list {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+  }
 }
