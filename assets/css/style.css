@@ -93,6 +93,11 @@
   src: url(/assets/font/GERIMIST_BASE.ttf);
 }
 
+@font-face {
+  font-family: numberFont;
+  src: url(/assets/font/GERIMIST_BASE.ttf);
+}
+
 
 /*-----------------------------------*\
   #RESET
@@ -313,7 +318,7 @@ body {
 
 .h4-2 { font-size: var(--fs-7); }
 
-.h4-3 { font-size: var(--fs-5); }
+.h4-3 { font-size: 20px; }
 
 .h5 { font-size: var(--fs-5.5); }
 
@@ -714,9 +719,11 @@ body {
   #ACHIEVEMENTS
 \*-----------------------------------*/
 
-.achievements .section-title { margin-block-end: 18px; }
+.achievements .section-title { margin-block-end: 10px; }
 
-.achievements .section-text { margin-block-end: 80px; }
+.achievements .section-text { 
+  margin-block-end: 20px;
+}
 
 .achievements-list {
   display: grid;
@@ -927,14 +934,15 @@ textarea.contact-input {
 }
 
 .labpictures .date {
-  text-align: center;
-  color:black;
+  text-align: left;
+  color: var(--white);
   font-size: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin-bottom: 10px;
   border-radius: var(--radius-15);
   border-width: thin; 
-  border: solid turquoise;
-  background-color:cadetblue;
+  border: solid black;
+  background-color: var(--independence);
 }
 
 .labpictures-list {
@@ -1419,8 +1427,7 @@ textarea.contact-input {
 
   .contact-form { margin-block-end: 0; }
 
-  .contact-item { 
-    gap: 25px; 
+  .contact-item {  
     width: 100%;
   }
 
