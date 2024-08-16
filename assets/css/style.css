@@ -90,12 +90,7 @@
 
 @font-face {
   font-family: myFont;
-  src: url(/assets/font/GERIMIST_BASE.ttf);
-}
-
-@font-face {
-  font-family: numberFont;
-  src: url(/assets/font/GERIMIST_BASE.ttf);
+  src: url(/assets/font/edosz.ttf);
 }
 
 
@@ -885,7 +880,7 @@ textarea.contact-input {
 }
 
 .news-card .card-banner {
-  border-radius: var(--radius-15);
+  border-radius: var(--radius-15) var(--radius-15) 0 0;
   overflow: hidden;
   margin-block-end: 15px;
 }
