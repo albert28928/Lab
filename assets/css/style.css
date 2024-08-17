@@ -490,10 +490,12 @@ body {
 
 .about-list {
   display: grid;
-  gap: 40px;
 }
 
-.about .block {
+
+.about-card { 
+  transition: var(--transition-2);
+  font-family: var(--ff-barlow); 
   background: var(--independence);
   padding: 20px;
   border-bottom: 2px solid transparent;
@@ -501,7 +503,13 @@ body {
   margin-bottom: 20px;
 }
 
-.about-card { font-family: var(--ff-barlow); }
+.about-card:hover img{
+  transform: scale(1.13);
+}
+
+.about-card:hover {
+  filter: drop-shadow(0 0 1rem black);
+}
 
 .about-card .card-banner {
   background-color: var(--independence);
@@ -515,7 +523,6 @@ body {
 
 .about-card .card-banner img { transition: var(--transition-2); }
 
-.about-card .card-banner :hover { transform: scale(1.13); }
 
 .about-card .card-tag {
   color: var(--orange-soda);
@@ -1146,7 +1153,6 @@ textarea.contact-input {
    * MEMBERS, NEWS, LABPICTURES
    */
 
-  .about-list,
   .contact-list,
   .news-list {
     grid-template-columns: 1fr 1fr;
@@ -1162,6 +1168,16 @@ textarea.contact-input {
 
   .contact-card {
     width: 750px;
+  }
+
+
+  /**
+   * RESEARCH
+   */
+  .about-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin: 0px;
   }
   
 
@@ -1369,10 +1385,6 @@ textarea.contact-input {
 
   .about { padding-block-end: 180px; }
 
-  .about-list {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-  }
 
 
 
