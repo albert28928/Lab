@@ -198,9 +198,19 @@
 
           <h2 class="h1 section-text">Lab Members</h2>
           
-          <ul class="members-list">
+          <div id="btnfilter" class="filter">
 
-            <figure class="members-card">
+            <button class="btn active" onclick="filterSelection('All')">All</button>
+            <button class="btn" onclick="filterSelection('Professor')">Professor</button>
+            <button class="btn" onclick="filterSelection('CurrentStudents')">Current Students</button>
+            <button class="btn" onclick="filterSelection('Alumni')">Alumni</button>
+
+          </div>
+
+
+          <div class="members-list">
+
+            <div class="members_card Professor">
 
               <div class="card-banner-professor">
                 <img src="./assets/images/Professor.jpg" width="1181" height="843" loading="lazy"
@@ -218,16 +228,16 @@
 
               <p class="h5-2">助理教授</p>
 
-            </figure>
+            </div>
 
             
-            <div class="members-card">
+            <div class="members_card CurrentStudents">
 
-              <figure class="card-banner">
+              <div class="card-banner">
                 <img src="./assets/images/Elon_Musk.jpg" width="1181" height="843" loading="lazy"
                   alt="張舒翔" class="img-cover">
 
-              </figure>
+              </div>
 
               <p class="h4-2">張舒翔</p>
 
@@ -241,12 +251,12 @@
 
 
 
-            <div class="members-card">
+            <div class="members_card CurrentStudents">
 
-              <figure class="card-banner">
+              <div class="card-banner">
                 <img src="./assets/images/LI YANG SYU.jpg" width="1181" height="843" loading="lazy"
                   alt="李洋旭" class="img-cover">
-              </figure>
+              </div>
 
               <p class="h4-2">李洋旭</p>
 
@@ -259,12 +269,12 @@
 
 
 
-            <div class="members-card">
+            <div class="members_card CurrentStudents">
 
-              <figure class="card-banner">
+              <div class="card-banner">
                 <img src="./assets/images/Huang Yao Tsung.jpg" width="1181" height="843" loading="lazy"
                   alt="黃耀宗" class="img-cover">
-              </figure>
+              </div>
 
               <p class="h4-2">黃耀宗</p>
 
@@ -278,12 +288,12 @@
 
 
 
-            <div class="members-card">
+            <div class="members_card CurrentStudents">
 
-              <figure class="card-banner">
+              <div class="card-banner">
                 <img src="./assets/images/korean_fish.jpg" width="1181" height="843" loading="lazy"
                   alt="吳致達" class="img-cover">
-              </figure>
+              </div>
 
               <p class="h4-2">吳致達</p>
 
@@ -297,12 +307,12 @@
 
 
 
-            <div class="members-card">
+            <div class="members_card CurrentStudents">
 
-              <figure class="card-banner">
+              <div class="card-banner">
                 <img src="./assets/images/LI YI SIAN.jpg" width="1181" height="843" loading="lazy"
                   alt="李弈嫺" class="img-cover">
-              </figure>
+              </div>
 
               <p class="h4-2">李弈嫺</p>
 
@@ -317,7 +327,7 @@
 
 
 
-          </ul>
+          </div>
 
         </div>
       </section>
@@ -428,6 +438,7 @@
     - custom js link
   -->
   <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/button.js"></script>
 
   <!-- 
     - ionicon link
