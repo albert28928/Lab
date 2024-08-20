@@ -706,6 +706,7 @@ body {
   color: white;
   text-align: center;
   overflow-wrap: break-word;
+  transition: all 0.4s ease 0s;
 }
 
 .projects-list table th {
@@ -720,6 +721,12 @@ body {
 .projects-list table .project-name {
   text-align: left;
   overflow-wrap: break-word;
+}
+
+
+.projects-list table tr:hover td {
+  transition: all 0.4s ease 0s;
+  background-color: var(--independence);
 }
 
 
