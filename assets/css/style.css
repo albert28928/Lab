@@ -1016,6 +1016,12 @@ textarea.contact-input {
   text-align: left;
   overflow-wrap: break-word;
   color: rgba(237, 107, 107, 0.975);
+  font-family: var(--ff-barlow);
+}
+
+.News-list table .Date {
+  overflow-wrap: break-word;
+  font-family: var(--ff-barlow);
 }
 
 
