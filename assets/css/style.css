@@ -575,7 +575,7 @@ body {
   background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
   padding: 0.5rem 1rem;
   margin-bottom: 10px;
-  border-radius: 2rem;
+  border-radius: 1rem;
   min-width: 50px;
   cursor: pointer;
   transition: all 0.3s;
