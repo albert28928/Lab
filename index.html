@@ -52,6 +52,10 @@
           </li>
 
           <li>
+            <a href="#news" class="navbar-link" data-nav-link>News</a>
+          </li>
+
+          <li>
             <a href="#about" class="navbar-link" data-nav-link>Research</a>
           </li>
           
@@ -65,10 +69,6 @@
 
           <li>
             <a href="./achievements.html" class="navbar-link" data-nav-link>Achievements</a>
-          </li>
-
-          <li>
-            <a href="./news.html" class="navbar-link" data-nav-link>News</a>
           </li>
 
           <li>
@@ -112,9 +112,55 @@
 
         </div>
       </section>
+      
+
+
+      <section class="section recruit" id="projects">
+        <div class="RecruitBoard">
+          <div class="block">
+            <b>鑑於產業界對於先進資訊技術人才的迫切需求，我們熱烈歡迎所有積極學習的學生加入「視覺與智慧系統實驗室」實驗室，與我們攜手探索這些先進資訊技術的未來發展前景。</b>
+            <div class="interest">
+              <b>若有興趣請寄信給</b>
+              <a href="mailto:peggylu@cs.ccu.edu.tw">
+                <b>盧沛怡教授</b>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </section>
 
 
 
+      <section class="section News" id="news">
+        <div class="container">
+
+            <h2 class="h2 section-title">最新消息</h2>
+
+            <p class="h1 section-text">News</p>
+
+            <ul class="News-list">
+
+                <table style="table-layout: fixed; width: 100%; border-collapse: collapse;">
+                    <tr>
+
+                        <th style="width: 40%;">日期</th>
+                        <th style="width: 80%;">公布事項</th>
+                        
+                    </tr>
+                    <tr>
+
+                        <td>2024/08/08</td>
+                        <td class="News-name">Congratulations on the establishment of the laboratory !!!</td>
+
+                    </tr>
+                    
+                </table>
+
+            </ul>
+
+        </div>
+      </section>
 
 
       <!-- 
@@ -202,7 +248,9 @@
 
             <button class="btn active" onclick="filterSelection('All')">All</button>
             <button class="btn" onclick="filterSelection('Professor')">Professor</button>
-            <button class="btn" onclick="filterSelection('CurrentStudents')">Current Students</button>
+            <button class="btn" onclick="filterSelection('PhDStudents')">PhD Students</button>
+            <button class="btn" onclick="filterSelection('GraduateStudents')">Graduate Students</button>
+            <button class="btn" onclick="filterSelection('UndergraduateStudents')">Undergraduate Students</button>
             <button class="btn" onclick="filterSelection('Alumni')">Alumni</button>
 
           </div>
@@ -230,8 +278,27 @@
 
             </div>
 
+
+            <div class="members_card PhDStudents">
+
+              <div class="card-banner GraduateStudents">
+                <img src="./assets/images/FB-user.jpg" width="1181" height="843" loading="lazy"
+                  alt="陳愷謦" class="img-cover">
+
+              </div>
+
+              <p class="h4-2">陳愷謦</p>
+
+              <h3 class="card-title">
+                <p class="h5-1">Context</p>
+              </h3>
+
+              <p class="h5-2">博士生</p>
+
+            </div>
+
             
-            <div class="members_card CurrentStudents">
+            <div class="members_card GraduateStudents">
 
               <div class="card-banner">
                 <img src="./assets/images/Elon_Musk.jpg" width="1181" height="843" loading="lazy"
@@ -251,7 +318,7 @@
 
 
 
-            <div class="members_card CurrentStudents">
+            <div class="members_card GraduateStudents">
 
               <div class="card-banner">
                 <img src="./assets/images/LI YANG SYU.jpg" width="1181" height="843" loading="lazy"
@@ -269,7 +336,7 @@
 
 
 
-            <div class="members_card CurrentStudents">
+            <div class="members_card GraduateStudents">
 
               <div class="card-banner">
                 <img src="./assets/images/Huang Yao Tsung.jpg" width="1181" height="843" loading="lazy"
@@ -288,7 +355,7 @@
 
 
 
-            <div class="members_card CurrentStudents">
+            <div class="members_card GraduateStudents">
 
               <div class="card-banner">
                 <img src="./assets/images/korean_fish.jpg" width="1181" height="843" loading="lazy"
@@ -307,7 +374,7 @@
 
 
 
-            <div class="members_card CurrentStudents">
+            <div class="members_card UndergraduateStudents">
 
               <div class="card-banner">
                 <img src="./assets/images/LI YI SIAN.jpg" width="1181" height="843" loading="lazy"
@@ -377,7 +444,7 @@
                 <div>
                   <h3 class="contact-item-title">Email</h3>
 
-                  <a href="mailto:hello@ethan.com" class="contact-item-link">huangkoko1455@gmail.com</a>
+                  <a href="mailto:hello@ethan.com" class="contact-item-link">peggylu@cs.ccu.edu.tw</a>
                 </div>
 
               </li>
