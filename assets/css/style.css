@@ -1031,12 +1031,12 @@ textarea.contact-input {
 \*-----------------------------------*/
 
 .RecruitBoard {
-  filter: drop-shadow(0 0 1rem rgb(85, 204, 198));
+  filter: drop-shadow(0 0 1rem white);
   padding: 10px;
   text-align: center;
   border-radius: var(--radius-15);
   margin: 0 25px 0 25px;
-  background: linear-gradient(90deg, red, yellow);
+  background: linear-gradient(90deg, rgb(63, 11, 250), rgb(214, 121, 233));
   background-size: 200% 100%;
   background-position: 0 0;
   animation: gradientChange 2s infinite linear alternate;
