@@ -69,7 +69,7 @@
    * spacing
    */
 
-  --section-padding: 80px;
+  --section-padding: 70px;
 
   /**
    * shadow
@@ -334,7 +334,7 @@ body {
   padding-block: 7px;
   width: 100%;
   background-color: var(--space-cadet);
-  height: 85px;
+  height: 70px;
   box-shadow: var(--shadow);
   overflow: hidden;
   transition: 0.25s var(--cubic-out);
@@ -357,7 +357,7 @@ body {
 }
 
 .header > .container > a > img {
-  width: 40%;
+  width: 52.5px;
 }
 
 .logo {
@@ -376,11 +376,11 @@ body {
 
 .navbar {
   position: absolute;
-  top: 75px;
+  top: 70px;
   left: 0;
   width: 100%;
-  padding-inline: 20px;
-  padding-left: 30px;
+  padding-right: 30px;
+  padding-left: 20px;
   visibility: hidden;
   opacity: 0;
   transition: var(--transition-2);
@@ -389,6 +389,12 @@ body {
 .header.nav-active .navbar {
   visibility: visible;
   opacity: 1;
+}
+
+.navbar-list {
+  display: grid;
+  justify-content: left;
+  text-align: left;
 }
 
 .navbar-link {
@@ -1392,7 +1398,7 @@ textarea.contact-input {
      * spacing
      */
 
-    --section-padding: 100px;
+    --section-padding: 65px;
 
   }
 
@@ -1443,7 +1449,7 @@ textarea.contact-input {
   }
 
   .header > .container > a > img {
-    width: 50%;
+    width: 30%;
   }
 
 
