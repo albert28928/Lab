@@ -69,7 +69,7 @@
    * spacing
    */
 
-  --section-padding: 70px;
+  --section-padding: 65px;
 
   /**
    * shadow
@@ -334,7 +334,7 @@ body {
   padding-block: 7px;
   width: 100%;
   background-color: var(--space-cadet);
-  height: 70px;
+  height: 67px;
   box-shadow: var(--shadow);
   overflow: hidden;
   transition: 0.25s var(--cubic-out);
@@ -376,7 +376,7 @@ body {
 
 .navbar {
   position: absolute;
-  top: 70px;
+  top: 65px;
   left: 0;
   width: 100%;
   padding-right: 30px;
