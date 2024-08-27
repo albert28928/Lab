@@ -36,6 +36,8 @@
   --rufous: hsl(2, 85%, 35%);
   --black: hsl(0, 0%, 0%);
   --white: hsl(0, 0%, 100%);
+  --vegas-gold: hsl(45, 54%, 58%);
+  --text-gradient-yellow: linear-gradient(to right, hsl(45, 100%, 72%), hsl(35, 100%, 68%));
 
   /**
    * typography
@@ -113,7 +115,7 @@ a {
   color: inherit;
 }
 
-a,
+
 img,
 span,
 input,
@@ -241,12 +243,19 @@ body {
   line-height: 1.3;
 }
 
+.h3-1 {
+  color: var(--white);
+  font-family: var(--ff-barlow);
+  font-weight: var(--fw-600);
+  line-height: 1.3;
+}
+
 .h4-1 {
   color: var(--orange-soda);
   font-family: var(--ff-barlow);
   font-weight: var(--fw-4);
   line-height: 1.3;
-  margin-block-end: 5px;
+  margin-block-end: 10px;
   text-align: center; 
 }
 
@@ -307,9 +316,11 @@ body {
 
 .h3 { font-size: var(--fs-3); }
 
+.h3-1 { font-size: var(--fs-7); }
+
 .h4 { font-size: var(--fs-5.5); }
 
-.h4-1 { font-size: var(--fs-7); }
+.h4-1 { font-size: 2.5rem; }
 
 .h4-2 { font-size: var(--fs-7); }
 
@@ -395,6 +406,10 @@ body {
   display: grid;
   justify-content: left;
   text-align: left;
+}
+
+.navbar-list li {
+  padding-bottom: 5px;
 }
 
 .navbar-link {
@@ -505,6 +520,7 @@ body {
 
 .about-list {
   display: grid;
+  justify-content: center;
 }
 
 
@@ -512,7 +528,7 @@ body {
   transition: var(--transition-2);
   font-family: var(--ff-barlow); 
   background: var(--independence);
-  padding: 20px;
+  padding: 20px 20px 20px 30px;
   border-bottom: 2px solid transparent;
   border-radius: var(--radius-15);
   margin-bottom: 20px;
@@ -662,9 +678,9 @@ body {
   transition: all 0.4s ease 0s;
   color: rgba(235, 122, 30, 0.885);
   font-size: 25px;
-  border-width: thin; 
   padding: 0.5rem 0.5rem;
   border: solid rgba(235, 122, 30, 0.885);
+  border-width: 0.4rem;
   border-radius: var(--radius-15);
   opacity: 0;
 }
@@ -796,47 +812,44 @@ body {
 }
 
 .achievements-list {
-  display: grid;
-  gap: 60px;
-}
-
-.achievements-card {
-  background-color: var(--independence);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding: 120px 20px;
-  border-radius: var(--radius-20);
+  display: block;
+  border-radius: var(--radius-15);
   font-family: var(--ff-barlow);
-  color: var(--white);
-  font-weight: var(--fw-600);
-  transition: var(--transition-2);
 }
 
-.achievements-list > li:nth-child(even) .card-content { margin-inline-start: auto; }
-
-.achievements-card .card-subtitle {
-  color: var(--orange-soda);
-  margin-block-end: 5px;
+.achievements-list .achievements-title {
+  margin-bottom: 10px;
+  line-height: 1.3;
 }
 
-.achievements-card .card-title {
-  max-width: 20ch;
-  margin-block-end: 20px;
+.achievements-list .achievements-category {
+  margin-left: 10px;
+  margin-bottom: 20px;
 }
 
-.achievements-card .btn-link {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  font-size: var(--fs-6);
-  text-transform: uppercase;
+.achievements-list .achievements-category b{
+  color: var(--vegas-gold);
+  font-weight: bold;
+  line-height: 1.6;
 }
 
-.achievements-card .btn-link ion-icon {
-  color: var(--orange-soda);
-  font-size: 1.6rem;
+.achievements-list .achievements-category span.highlight {
+  color: white;
+  line-height: 1.6;
+  display: inline-block;
 }
+
+.achievements-list .title-bar {
+  content: "";
+  margin: 20px 0 20px 0;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 5px;
+  background: var(--text-gradient-yellow);
+  border-radius: 3px;
+}
+
 
 
 
@@ -1016,7 +1029,7 @@ textarea.contact-input {
 .News-list table th {
   border: 1px solid white;
   padding: 10px 10px;
-  color: rgb(142, 200, 230);
+  color: red;
   text-align: center;
   font-size: 16px;
   overflow-wrap: break-word;
@@ -1027,10 +1040,14 @@ textarea.contact-input {
   background-color: var(--independence);
 }
 
+.News-list table tr .top {
+  text-align: left;
+}
+
 .News-list table .News-name {
   text-align: left;
   overflow-wrap: break-word;
-  color: rgba(237, 107, 107, 0.975);
+  color: white;
   font-family: var(--ff-barlow);
 }
 
@@ -1072,19 +1089,26 @@ textarea.contact-input {
   padding: 20px 10px 70px 10px;
   border-radius: var(--radius-15);
   font-size: 22px;
+  font-family: var(--ff-barlow);
   color: white;
+  text-align: center;
+}
+
+.RecruitBoard .wanted {
+  font-size: 30px;
+  color: red;
 }
 
 .RecruitBoard .block .interest {
   margin-top: 20px;
-  font-size: 30px;
+  font-size: 25px;
   color: rgba(107, 158, 213, 1);
 }
 
 .RecruitBoard .block .interest a b{
   margin-top: 20px;
-  font-size: 30px;
-  color: rgb(189, 167, 228);
+  font-size: 25px;
+  color: rgb(110, 202, 233);
 }
 
 
@@ -1104,7 +1128,7 @@ textarea.contact-input {
   text-align: left;
   color: var(--white);
   font-size: 25px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: var(--ff-barlow);
   margin-bottom: 10px;
   border-radius: var(--radius-15);
   border-width: thin; 
@@ -1141,28 +1165,6 @@ textarea.contact-input {
   transform: scale(1.2);
 }
 
-.labpictures-card .text-block {
-  display: block;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-
-.labpictures-card .card-tag {
-  color: var(--orange-soda);
-  margin-block-end: 5px;
-}
-
-.labpictures-card .card-title {
-  color: var(--white);
-  font-weight: var(--fw-600);
-  line-height: 1.3;
-}
-
-.labpictures-card .card-title a { transition: var(--transition-2); }
-
-.labpictures-card .card-title a:is(:hover, :focus) { color: var(--orange-soda); }
 
 
 

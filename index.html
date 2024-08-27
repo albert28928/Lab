@@ -119,11 +119,15 @@
       <section class="section recruit">
         <div class="RecruitBoard">
           <div class="block">
-            <b>鑑於產業界對於先進資訊技術人才的迫切需求，我們熱烈歡迎所有積極學習的學生加入「視覺與智慧系統實驗室」實驗室，與我們攜手探索這些先進資訊技術的未來發展前景。</b>
+            <b class="wanted">!! WANTED !!</b>
+            <br>
+            <b>歡迎對智慧監控、資料分析及電腦視覺等AI前瞻技術充滿熱情的研究生或專題生加入本實驗室。</b>
+            <br>
+            <b>We are seeking passionate students to join our lab, focusing on cutting-edge AI technologies in smart surveillance, data analysis, and computer vision. If you’re driven by innovation and eager to make a real-world impact, we’d love to have you on our team!</b>
             <div class="interest">
-              <b>若有興趣請寄信至</b>
+              <b>Please email to:</b>
               <a href="mailto:peggylu@cs.ccu.edu.tw">
-                <b>盧沛怡教授信箱</b>
+                <b>peggylu@cs.ccu.edu.tw</b>
               </a>
             </div>
           </div>
@@ -145,10 +149,18 @@
                 <table style="table-layout: fixed; width: 100%; border-collapse: collapse;">
                     <tr>
 
-                        <th style="width: 40%;">日期</th>
-                        <th style="width: 80%;">公布事項</th>
+                        <th style="width: 40%;">置頂</th>
+                        <th style="width: 80%;" class="top">歡迎對智慧監控、資料分析及電腦視覺充滿熱情的研究生或專題生加入本實驗室，請寄信至：peggylu@cs.ccu.edu.tw</th>
                         
                     </tr>
+
+                    <tr>
+
+                      <td class="Date">2024/09/09</td>
+                      <td class="News-name">第一版網頁上線囉</td>
+
+                  </tr>
+
                     <tr>
 
                         <td class="Date">2024/08/08</td>
@@ -187,7 +199,9 @@
                 <p class="h4-1">Computer Vision</p>
 
                 <h3 class="card-title">
-                  <p class="h5">Computer Vision is a field that enables computers to interpret and understand visual information from the world, such as images and videos. It combines computer science, mathematics, and artificial intelligence to allow machines to process and analyze visual data.</a>
+                  <p class="h5">電腦視覺為本實驗室的核心研究領域，任何與電腦視覺相關之最新人工智慧技術，都在本實驗室研究範圍內，涵蓋物件偵測、圖像生成以及多模態技術整合等。</p>
+                  <br>
+                  <p class="h5">Computer vision is the core focus of our lab, encompassing the latest AI technologies related to this field. Our research spans a wide range, from object detection and image generation to multimodal technology integration.</p>
                 </h3>
 
               </div>
@@ -200,10 +214,12 @@
                     alt="Image Processing Introduction" class="img-cover-about">
                 </figure>
 
-                <p class="h4-1">Image Processing</p>
+                <p class="h4-1">Technological Investigation</p>
 
                 <h3 class="card-title">
-                  <p class="h5">Image Processing is a technique used to enhance, manipulate, and analyze images. It involves applying various algorithms and operations to digital images to improve their quality or extract useful information.</a>
+                  <p class="h5">將最新電腦視覺、深度學習、大數據分析等技術應用於真實案例。包含環境資料異常監測、環保犯罪偵查、跨攝影機可疑人車偵測等實際應用場景。</p>
+                  <br>
+                  <p class="h5">We apply the latest technologies in computer vision, deep learning, and big data analysis to real-world cases, including environmental anomaly detection, environmental crime investigation, and cross-camera detection of suspicious vehicles and pedestrians.</p>
                 </h3>
 
               </div>
@@ -220,7 +236,9 @@
                 <p class="h4-1">Federated Learning</p>
 
                 <h3 class="card-title">
-                  <p class="h5">Federated Learning is a machine learning approach that allows multiple devices or servers to collaboratively train a shared model without sharing their raw data. Instead, each device trains the model locally and only shares updates with a central server.</a>
+                  <p class="h5">透過聯邦式學習架構進行跨攝影機物件偵測，實現多來源領域自適應物件偵測，著重於領域差異性與資料類別不平衡之分析與深入研究。</p>
+                  <br>
+                  <p class="h5">We employ a federated learning framework for cross-camera object detection, enabling adaptive detection across multiple sources while focusing on addressing domain discrepancies and data imbalance through thorough analysis and research.</p>
                 </h3>
 
               </div>
@@ -241,7 +259,7 @@
       <section class="section members" id="members">
         <div class="container">
 
-          <p class="h2 section-title">研究成員</p>
+          <p class="h2 section-title">實驗室成員</p>
 
           <h2 class="h1 section-text">Lab Members</h2>
           
@@ -252,7 +270,7 @@
             <button class="btn" onclick="filterSelection('PhDStudents')">PhD Students</button>
             <button class="btn" onclick="filterSelection('MasterStudents')">Master Students</button>
             <button class="btn" onclick="filterSelection('UndergraduateStudents')">Undergraduate Students</button>
-            <button class="btn" onclick="filterSelection('GraduatedStudents')">Graduated Students</button>
+            <!--<button class="btn" onclick="filterSelection('Alumni')">Alumni </button>-->
 
           </div>
 
@@ -291,7 +309,7 @@
               <p class="h4-2">陳愷謦</p>
 
               <h3 class="card-title">
-                <p class="h5-1">Context</p>
+                <p class="h5-1">kai-ching</p>
               </h3>
 
               <p class="h5-2">博士生</p>
@@ -303,11 +321,11 @@
 
               <div class="card-banner">
                 <img src="./assets/images/FB-user.jpg" width="1181" height="843" loading="lazy"
-                  alt="張舒翔" class="img-cover">
+                  alt="張翔舒" class="img-cover">
 
               </div>
 
-              <p class="h4-2">張舒翔</p>
+              <p class="h4-2">張翔舒</p>
 
               <h3 class="card-title">
                 <p class="h5-1">Context</p>
@@ -459,7 +477,7 @@
                 <div>
                   <h3 class="contact-item-title">Phone</h3>
 
-                  <a href="tel:+1234567890" class="contact-item-link">0912345678</a>
+                  <a href="tel:+1234567890" class="contact-item-link">+886-5-2720411 ext. xxxx</a>
                 </div>
 
               </li>
