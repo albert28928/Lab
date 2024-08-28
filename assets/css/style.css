@@ -371,6 +371,22 @@ body {
   width: 52.5px;
 }
 
+.header.nav-active .navbar-list > li{
+  animation: FadeIn 0.65s 1ms both;
+}
+
+@keyframes FadeIn {
+  0% { 
+    opacity: 0; 
+    transform: translateX(-100px);
+  }
+  100% { 
+    opacity: 1; 
+    transform: translateX(0px);
+  }
+
+}
+
 .logo {
   color: var(--white);
   font-family: var(--ff-poppins);
@@ -1589,6 +1605,10 @@ textarea.contact-input {
     box-shadow: none;
     height: unset;
     padding-block: 15px;
+  }
+
+  .header.nav-active .navbar-list > li{
+    animation: none;
   }
 
   .header.active {
