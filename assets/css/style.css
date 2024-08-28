@@ -1014,27 +1014,27 @@ body {
 
 .contact-card .section-title { 
   margin-block-end: 10px; 
-  transform: translateY(-50px);
+  /*transform: translateY(-50px);
   opacity: 0;
-  transition: all 0.7s ease 0s;
+  transition: all 0.7s ease 0s;*/
 }
 
-.contact-card .section-title.active {
+/*.contact-card .section-title.active {
   transform: translateY(0px);
   opacity: 1;
-}
+}*/
 
 .contact-card .section-text { 
   margin-block-end: 20px;
-  transform: translateY(-50px);
+  /*transform: translateY(-50px);
   opacity: 0;
-  transition: all 0.7s ease 0s;
+  transition: all 0.7s ease 0s;*/
 }
 
-.contact-card .section-text.active {
+/*.contact-card .section-text.active {
   transform: translateY(0px);
   opacity: 1;
-}
+}*/
 
 .contact-list {
   display: grid;
@@ -1085,15 +1085,15 @@ textarea.contact-input {
 
 .contact-item { 
   margin-block-end: 20px; 
-  transform: translateY(100px);
+  /*transform: translateY(100px);
   opacity: 0;
-  transition: all 0.7s ease 0s;
+  transition: all 0.7s ease 0s;*/
 }
 
-.contact-item.active {
+/*.contact-item.active {
   transform: translateY(0px);
   opacity: 1;
-}
+}*/
 
 .contact-icon {
   background-color: var(--glaucous);
@@ -1250,13 +1250,13 @@ textarea.contact-input {
 
 .RecruitBoard .block .interest {
   margin-top: 20px;
-  font-size: 25px;
+  font-size: var(--fs-7);
   color: rgba(107, 158, 213, 1);
 }
 
 .RecruitBoard .block .interest a b{
   margin-top: 20px;
-  font-size: 25px;
+  font-size: var(--fs-7);
   color: rgb(110, 202, 233);
 }
 
